@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#29251f"><meta name="description" content="Chronica – thư viện và phòng luyện tập lịch sử thế giới, Việt Nam.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Chronica – Thư viện lịch sử</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar"><a class="brand" href="#" aria-label="Chronica trang chủ"><span class="brand-mark">C</span><span>CHRONICA<small>THE ARCHIVE OF HUMAN HISTORY</small></span></a><button id="musicToggle" class="icon-btn" title="Bật/tắt nhạc piano" aria-label="Bật tắt nhạc">♫ <span id="musicLabel">Nhạc: Tắt</span></button></header>
+<main>
+<section id="home" class="screen active">
+  <div class="hero">
+    <div class="hero-kicker">HISTORIA MAGISTRA VITAE</div>
+    <h1>Thư viện<br><em>thời gian</em></h1>
+    <p>Đi qua những nền văn minh, biến cố và dấu mốc đã định hình thế giới.</p>
+    <div class="hero-actions"><button class="primary" id="startBtn">Bắt đầu hành trình <span>↗</span></button><button class="secondary" id="libraryBtn">Khám phá thư viện</button></div>
+    <div class="hero-note">VOL. I · HUMAN HISTORY · EST. MMXXVI</div>
+  </div>
+  <div class="section-heading"><span>01 / HÀNH TRÌNH</span><h2>Chọn kho tư liệu</h2></div>
+  <div class="archive-grid">
+    <button class="archive-card" data-region="world"><span class="card-number">I</span><span class="card-icon">🌍</span><strong>Lịch sử thế giới</strong><small>Từ những nền văn minh cổ đại đến thế kỷ XXI</small><span class="card-arrow">↗</span></button>
+    <button class="archive-card" data-region="vietnam"><span class="card-number">II</span><span class="card-icon">🏛</span><strong>Lịch sử Việt Nam</strong><small>Từ buổi đầu dựng nước đến Việt Nam hiện đại</small><span class="card-arrow">↗</span></button>
+  </div>
+  <div class="quote">“Hiểu quá khứ, nhận thức hiện tại, kiến tạo tương lai.”</div>
+</section>
+
+<section id="setup" class="screen">
+  <button class="back" data-go="home">← Trang chủ</button>
+  <div class="section-heading"><span>02 / THIẾT LẬP</span><h2>Tạo bài luyện tập</h2><p>Chọn phạm vi kiến thức và thử thách phù hợp với cậu.</p></div>
+  <div class="form-panel">
+    <label>Kho lịch sử<select id="region"><option value="world">Lịch sử thế giới</option><option value="vietnam">Lịch sử Việt Nam</option><option value="both">Thế giới & Việt Nam</option></select></label>
+    <label>Giai đoạn<select id="period"><option value="all">Tất cả giai đoạn</option><option value="ancient">Tiền sử – Cổ đại</option><option value="medieval">Trung đại</option><option value="early-modern">Cận đại</option><option value="modern">Hiện đại</option><option value="contemporary">Đương đại</option></select></label>
+    <label>Cấp độ tư duy<select id="level"><option value="mixed">Kết hợp cả ba cấp độ</option><option value="recognition">Nhận biết</option><option value="comprehension">Thông hiểu</option><option value="application">Vận dụng</option></select></label>
+    <label>Dạng câu hỏi<select id="format"><option value="single">Nhiều lựa chọn (A–D)</option><option value="tf">Đúng – sai</option><option value="mixed">Kết hợp hai dạng</option></select></label>
+    <label>Chế độ<select id="mode"><option value="practice">Luyện tập tự do</option><option value="exam">Mô phỏng thi tốt nghiệp THPT</option></select></label>
+    <label id="countWrap">Số câu<select id="count"><option>10</option><option selected>20</option><option>40</option></select></label>
+    <div class="notice" id="examNotice" hidden>Đề mô phỏng theo cấu trúc tham khảo: 24 câu nhiều lựa chọn và 4 câu đúng–sai, thời gian 50 phút, thang điểm 10. Chế độ thi sẽ tự sử dụng cả hai dạng.</div>
+    <button class="primary full" id="beginQuiz">Tạo đề kiểm tra ↗</button>
+  </div>
+</section>
+
+<section id="library" class="screen">
+  <button class="back" data-go="home">← Trang chủ</button>
+  <div class="section-heading"><span>03 / THƯ VIỆN</span><h2>Những chương lịch sử</h2><p>Chọn một thời kỳ để xem giới thiệu và các chủ đề tiêu biểu.</p></div>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="quiz" class="screen">
+  <div class="quiz-top"><button class="back" id="quitQuiz">← Thoát</button><div class="timer" id="timer">50:00</div></div>
+  <div class="progress-line"><span id="progress"></span></div>
+  <div class="quiz-meta"><span id="quizSection">CHRONICA / PRACTICE</span><span id="questionNo">01 / 20</span></div>
+  <div id="questionArea"></div>
+  <div class="quiz-nav"><button class="secondary" id="prevQ">← Trước</button><button class="primary" id="nextQ">Tiếp theo →</button></div>
+  <button class="submit-link" id="submitQuiz">Nộp bài và xem kết quả</button>
+</section>
+
+<section id="result" class="screen">
+  <div class="result-seal">✦</div><div class="section-heading center"><span>CHRONICA / KẾT QUẢ</span><h2>Hành trình hoàn tất</h2><p id="resultSub">Cậu đã hoàn thành bài luyện tập.</p></div>
+  <div class="score-card"><small>ĐIỂM SỐ</small><div class="score" id="score">—</div><div class="score-caption" id="scoreCaption">THANG ĐIỂM 10</div></div>
+  <div class="result-stats"><div><strong id="correctCount">0</strong><small>Đúng</small></div><div><strong id="wrongCount">0</strong><small>Chưa đúng</small></div><div><strong id="blankCount">0</strong><small>Bỏ trống</small></div></div>
+  <h3 class="review-title">Đối chiếu đáp án</h3><div id="reviewList"></div>
+  <button class="primary full" id="againBtn">Tạo bài mới ↗</button>
+</section>
+</main>
+<footer><span>CHRONICA · MMXXVI</span><span>HỌC TỪ LỊCH SỬ</span></footer>
+</div>
+<audio id="piano" loop preload="none"></audio>
+<script src="app.js"></script>
+</body></html>

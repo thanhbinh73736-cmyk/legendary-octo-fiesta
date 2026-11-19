@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#29251f"><meta name="description" content="Chronica – thư viện và phòng luyện tập lịch sử thế giới, Việt Nam.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Chronica – Thư viện lịch sử</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+:root{--ink:#29251f;--paper:#f1eadb;--paper2:#e8deca;--muted:#897c67;--gold:#a4875d;--line:#d6c9b1;--white:#fbf8f0}
+*{box-sizing:border-box}body{margin:0;background:#29251f;color:var(--ink);font-family:'Be Vietnam Pro',sans-serif;font-size:14px}.app-shell{max-width:900px;min-height:100vh;margin:auto;background:var(--paper);box-shadow:0 0 60px #0006;display:flex;flex-direction:column}.topbar{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#eee5d4}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;letter-spacing:2px}.brand small{display:block;font:8px 'Be Vietnam Pro';letter-spacing:1.3px;color:var(--muted);margin-top:3px}.brand-mark{width:38px;height:38px;border:1px solid var(--gold);display:grid;place-items:center;font:26px 'Cormorant Garamond';color:var(--gold);border-radius:50%}.icon-btn,.back{border:0;background:none;color:var(--muted);cursor:pointer;font:inherit}.icon-btn{border:1px solid var(--line);padding:9px 12px;border-radius:30px;font-size:12px}main{flex:1;padding:30px 6% 55px}.screen{display:none}.screen.active{display:block}.hero{position:relative;padding:48px 7%;min-height:390px;background:linear-gradient(90deg,#25221de8,#25221d80),url('https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1400&q=85') center/cover;color:#f3e8d2;display:flex;flex-direction:column;justify-content:center}.hero-kicker,.section-heading>span,.quiz-meta,.hero-note{font-size:10px;letter-spacing:2px;color:#bda783}.hero h1{font:600 clamp(46px,9vw,76px)/.9 'Cormorant Garamond',serif;margin:20px 0}.hero h1 em{color:#c7ad82;font-weight:400}.hero p{max-width:410px;color:#ddd0b9;line-height:1.8;font-size:13px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.primary,.secondary{padding:13px 19px;border:1px solid var(--gold);cursor:pointer;font:500 12px 'Be Vietnam Pro';letter-spacing:.3px}.primary{background:#796343;color:#fff8eb}.primary:hover{background:#5f4e35}.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.hero .secondary{color:#f3e8d2;border-color:#a18c6b}.hero-note{margin-top:36px;color:#b8a98e;font-size:8px}.section-heading{margin:38px 0 20px}.section-heading>span{color:var(--gold)}.section-heading h2{font:600 36px 'Cormorant Garamond',serif;margin:7px 0}.section-heading p{color:var(--muted);font-size:12px;line-height:1.7}.archive-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.archive-card{position:relative;text-align:left;min-height:175px;padding:20px;background:#e9dfcd;border:1px solid var(--line);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:flex-start}.archive-card:hover{background:#e2d4bd}.card-number{font:italic 14px 'Cormorant Garamond';color:var(--gold)}.card-icon{font-size:25px;margin:8px 0}.archive-card strong{font:600 22px 'Cormorant Garamond'}.archive-card small{font-size:10px;color:var(--muted);line-height:1.5;margin-top:5px;max-width:230px}.card-arrow{position:absolute;right:18px;bottom:18px;color:var(--gold)}.quote{text-align:center;font:italic 19px 'Cormorant Garamond';color:#8d795a;padding:35px 10px 5px}.back{padding:8px 0}.form-panel{padding:22px;background:#e9dfcd;border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:17px}.form-panel label{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#786b58}.form-panel select{width:100%;padding:12px;background:#f7f1e5;border:1px solid #d4c6ae;color:var(--ink);font:12px 'Be Vietnam Pro';border-radius:0}.full{grid-column:1/-1;width:100%}.notice{grid-column:1/-1;padding:12px;background:#ded0b7;color:#6d5738;font-size:11px;line-height:1.6}.timeline{border-left:1px solid var(--gold);margin:25px 0 0 12px;padding-left:25px}.era{position:relative;padding:0 0 25px}.era:before{content:'';position:absolute;left:-31px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:3px solid var(--paper)}.era h3{font:600 23px 'Cormorant Garamond';margin:0 0 5px}.era p{color:var(--muted);font-size:12px;line-height:1.7;margin:0}.quiz-top{display:flex;justify-content:space-between;align-items:center}.timer{font:600 18px 'Cormorant Garamond';color:#8a6e46}.progress-line{height:3px;background:#ddd1bd;margin:18px 0}.progress-line span{display:block;height:100%;background:var(--gold);width:0;transition:width .2s}.quiz-meta{display:flex;justify-content:space-between;color:var(--gold);margin:24px 0}.question-card{padding:24px;background:#e9dfcd;border:1px solid var(--line)}.question-card h2{font:600 26px/1.3 'Cormorant Garamond';margin:0 0 22px}.qtype{font-size:9px;letter-spacing:1.4px;color:var(--gold);margin-bottom:12px}.option{display:flex;gap:12px;align-items:flex-start;padding:13px;margin:8px 0;border:1px solid #d7c9b1;background:#f4eddf;cursor:pointer;font-size:12px;line-height:1.6}.option:has(input:checked){border-color:var(--gold);background:#e1d3bb}.option input{accent-color:#826b49;margin-top:3px}.quiz-nav{display:flex;justify-content:space-between;margin:18px 0}.submit-link{display:block;margin:15px auto;border:0;background:none;text-decoration:underline;color:#806b4b;font:12px 'Be Vietnam Pro';cursor:pointer}.result-seal{margin:30px auto 10px;width:55px;height:55px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:25px}.center{text-align:center}.score-card{text-align:center;background:#e6dac5;border:1px solid var(--line);padding:25px}.score-card small,.score-caption{font-size:9px;letter-spacing:2px;color:var(--muted)}.score{font:600 65px 'Cormorant Garamond';color:#806744}.result-stats{display:grid;grid-template-columns:repeat(3,1fr);margin:18px 0;background:#e9dfcd}.result-stats div{text-align:center;padding:16px;border-right:1px solid var(--line)}.result-stats div:last-child{border:0}.result-stats strong{display:block;font:600 27px 'Cormorant Garamond'}.result-stats small{font-size:10px;color:var(--muted)}.review-title{font:600 25px 'Cormorant Garamond'}.review-item{padding:14px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.7}.review-item strong{display:block;margin-bottom:5px}.good{color:#58734d}.bad{color:#9a5145}.review-item small{display:block;color:var(--muted);margin-top:4px}footer{padding:18px 6%;display:flex;justify-content:space-between;border-top:1px solid var(--line);font-size:8px;letter-spacing:1.5px;color:#9a896d}
+@media(max-width:600px){.topbar{height:65px;padding:0 5%}.brand{font-size:17px}.brand-mark{width:34px;height:34px}.icon-btn{padding:8px}.icon-btn span{font-size:10px}main{padding:20px 5% 40px}.hero{min-height:380px;padding:35px 7%}.archive-grid{grid-template-columns:1fr}.archive-card{min-height:145px}.form-panel{grid-template-columns:1fr;padding:16px}.full,.notice{grid-column:auto}.section-heading h2{font-size:32px}.question-card{padding:17px}.question-card h2{font-size:23px}footer{font-size:7px}}
+
+</style>
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar"><a class="brand" href="#" aria-label="Chronica trang chủ"><span class="brand-mark">C</span><span>CHRONICA<small>THE ARCHIVE OF HUMAN HISTORY</small></span></a><button id="musicToggle" class="icon-btn" title="Bật/tắt nhạc piano" aria-label="Bật tắt nhạc">♫ <span id="musicLabel">Nhạc: Tắt</span></button></header>
+<main>
+<section id="home" class="screen active">
+  <div class="hero">
+    <div class="hero-kicker">HISTORIA MAGISTRA VITAE</div>
+    <h1>Thư viện<br><em>thời gian</em></h1>
+    <p>Đi qua những nền văn minh, biến cố và dấu mốc đã định hình thế giới.</p>
+    <div class="hero-actions"><button class="primary" id="startBtn">Bắt đầu hành trình <span>↗</span></button><button class="secondary" id="libraryBtn">Khám phá thư viện</button></div>
+    <div class="hero-note">VOL. I · HUMAN HISTORY · EST. MMXXVI</div>
+  </div>
+  <div class="section-heading"><span>01 / HÀNH TRÌNH</span><h2>Chọn kho tư liệu</h2></div>
+  <div class="archive-grid">
+    <button class="archive-card" data-region="world"><span class="card-number">I</span><span class="card-icon">🌍</span><strong>Lịch sử thế giới</strong><small>Từ những nền văn minh cổ đại đến thế kỷ XXI</small><span class="card-arrow">↗</span></button>
+    <button class="archive-card" data-region="vietnam"><span class="card-number">II</span><span class="card-icon">🏛</span><strong>Lịch sử Việt Nam</strong><small>Từ buổi đầu dựng nước đến Việt Nam hiện đại</small><span class="card-arrow">↗</span></button>
+  </div>
+  <div class="quote">“Hiểu quá khứ, nhận thức hiện tại, kiến tạo tương lai.”</div>
+</section>
+
+<section id="setup" class="screen">
+  <button class="back" data-go="home">← Trang chủ</button>
+  <div class="section-heading"><span>02 / THIẾT LẬP</span><h2>Tạo bài luyện tập</h2><p>Chọn phạm vi kiến thức và thử thách phù hợp với cậu.</p></div>
+  <div class="form-panel">
+    <label>Kho lịch sử<select id="region"><option value="world">Lịch sử thế giới</option><option value="vietnam">Lịch sử Việt Nam</option><option value="both">Thế giới & Việt Nam</option></select></label>
+    <label>Giai đoạn<select id="period"><option value="all">Tất cả giai đoạn</option><option value="ancient">Tiền sử – Cổ đại</option><option value="medieval">Trung đại</option><option value="early-modern">Cận đại</option><option value="modern">Hiện đại</option><option value="contemporary">Đương đại</option></select></label>
+    <label>Cấp độ tư duy<select id="level"><option value="mixed">Kết hợp cả ba cấp độ</option><option value="recognition">Nhận biết</option><option value="comprehension">Thông hiểu</option><option value="application">Vận dụng</option></select></label>
+    <label>Dạng câu hỏi<select id="format"><option value="single">Nhiều lựa chọn (A–D)</option><option value="tf">Đúng – sai</option><option value="mixed">Kết hợp hai dạng</option></select></label>
+    <label>Chế độ<select id="mode"><option value="practice">Luyện tập tự do</option><option value="exam">Mô phỏng thi tốt nghiệp THPT</option></select></label>
+    <label id="countWrap">Số câu<select id="count"><option>10</option><option selected>20</option><option>40</option></select></label>
+    <div class="notice" id="examNotice" hidden>Đề mô phỏng theo cấu trúc tham khảo: 24 câu nhiều lựa chọn và 4 câu đúng–sai, thời gian 50 phút, thang điểm 10. Chế độ thi sẽ tự sử dụng cả hai dạng.</div>
+    <button class="primary full" id="beginQuiz">Tạo đề kiểm tra ↗</button>
+  </div>
+</section>
+
+<section id="library" class="screen">
+  <button class="back" data-go="home">← Trang chủ</button>
+  <div class="section-heading"><span>03 / THƯ VIỆN</span><h2>Những chương lịch sử</h2><p>Chọn một thời kỳ để xem giới thiệu và các chủ đề tiêu biểu.</p></div>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="quiz" class="screen">
+  <div class="quiz-top"><button class="back" id="quitQuiz">← Thoát</button><div class="timer" id="timer">50:00</div></div>
+  <div class="progress-line"><span id="progress"></span></div>
+  <div class="quiz-meta"><span id="quizSection">CHRONICA / PRACTICE</span><span id="questionNo">01 / 20</span></div>
+  <div id="questionArea"></div>
+  <div class="quiz-nav"><button class="secondary" id="prevQ">← Trước</button><button class="primary" id="nextQ">Tiếp theo →</button></div>
+  <button class="submit-link" id="submitQuiz">Nộp bài và xem kết quả</button>
+</section>
+
+<section id="result" class="screen">
+  <div class="result-seal">✦</div><div class="section-heading center"><span>CHRONICA / KẾT QUẢ</span><h2>Hành trình hoàn tất</h2><p id="resultSub">Cậu đã hoàn thành bài luyện tập.</p></div>
+  <div class="score-card"><small>ĐIỂM SỐ</small><div class="score" id="score">—</div><div class="score-caption" id="scoreCaption">THANG ĐIỂM 10</div></div>
+  <div class="result-stats"><div><strong id="correctCount">0</strong><small>Đúng</small></div><div><strong id="wrongCount">0</strong><small>Chưa đúng</small></div><div><strong id="blankCount">0</strong><small>Bỏ trống</small></div></div>
+  <h3 class="review-title">Đối chiếu đáp án</h3><div id="reviewList"></div>
+  <button class="primary full" id="againBtn">Tạo bài mới ↗</button>
+</section>
+</main>
+<footer><span>CHRONICA · MMXXVI</span><span>HỌC TỪ LỊCH SỬ</span></footer>
+</div>
+<audio id="piano" loop preload="none"></audio>
+<script>
+const $=id=>document.getElementById(id);
+const questions=[
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Cuộc Cách mạng tư sản Anh thế kỉ XVII đã thách thức và làm suy yếu chế độ nào?',opts:['Quân chủ chuyên chế','Cộng hòa liên bang','Quân chủ lập hiến','Chế độ thuộc địa'],a:0,why:'Cách mạng Anh chống lại chế độ quân chủ chuyên chế; kết quả lâu dài là sự xác lập quân chủ lập hiến.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Sự kiện nào mở đầu Cách mạng tư sản Pháp năm 1789?',opts:['Thông qua Tuyên ngôn Nhân quyền và Dân quyền','Tấn công pháo đài – nhà tù Ba-xti','Lật đổ nền quân chủ lập hiến','Thiết lập chế độ Đốc chính'],a:1,why:'Ngày 14/7/1789, quần chúng Paris tấn công Ba-xti, mở đầu cách mạng.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Cuộc Cách mạng công nghiệp lần thứ nhất khởi đầu ở quốc gia nào?',opts:['Pháp','Đức','Anh','Hoa Kỳ'],a:2,why:'Cách mạng công nghiệp lần thứ nhất khởi đầu ở Anh vào thế kỉ XVIII.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'James Watt nổi tiếng với phát minh/cải tiến nào?',opts:['Máy kéo sợi Gien-ni','Máy dệt chạy bằng sức nước','Đầu máy xe lửa','Máy hơi nước'],a:3,why:'James Watt cải tiến máy hơi nước, tạo động lực quan trọng cho công nghiệp hóa.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Tuyên ngôn Độc lập Hoa Kỳ năm 1776 khẳng định những quyền tự nhiên nào?',opts:['Duy trì chế độ quân chủ','Sống, tự do và mưu cầu hạnh phúc','Mở rộng lãnh thổ thuộc địa','Duy trì đặc quyền phong kiến'],a:1,why:'Tuyên ngôn khẳng định các quyền sống, tự do và mưu cầu hạnh phúc.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ kết thúc với kết quả nào?',opts:['Anh giành thắng lợi','Pháp trực tiếp cai trị thuộc địa','Tây Ban Nha sáp nhập 13 thuộc địa','Các thuộc địa giành độc lập, thành lập Hoa Kỳ'],a:3,why:'Thắng lợi của thuộc địa được Anh công nhận qua Hiệp ước Paris năm 1783.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Ai lãnh đạo cuộc đảo chính ngày 18 tháng Sương mù năm 1799 tại Pháp?',opts:['Napoleon Bonaparte','Robespierre','Louis XVI','Danton'],a:0,why:'Napoleon tiến hành đảo chính, chấm dứt chế độ Đốc chính.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Bộ luật Napoleon năm 1804 có ý nghĩa nổi bật nào?',opts:['Khôi phục hoàn toàn phong kiến','Xóa bỏ sở hữu tư nhân','Bảo vệ một số thành quả pháp lý của cách mạng tư sản','Thiết lập dân chủ trực tiếp'],a:2,why:'Bộ luật bảo vệ quyền sở hữu tư nhân và bình đẳng pháp lý của nam giới.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Hội nghị Vienna năm 1814–1815 chủ yếu nhằm mục đích gì?',opts:['Thống nhất thuộc địa châu Mỹ','Tái lập trật tự châu Âu sau chiến tranh Napoleon','Thành lập Liên minh châu Âu','Thống nhất nước Đức'],a:1,why:'Các cường quốc thắng Napoleon tìm cách tái lập trật tự và cân bằng quyền lực châu Âu.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Biến đổi xã hội nổi bật do Cách mạng công nghiệp lần thứ nhất là gì?',opts:['Xóa bỏ giai cấp tư sản','Làm suy yếu hoàn toàn công nhân','Khôi phục lãnh địa phong kiến','Phát triển giai cấp tư sản và vô sản công nghiệp'],a:3,why:'Công nghiệp hóa thúc đẩy sự phát triển của hai giai cấp cơ bản trong xã hội tư bản.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Sự kiện nào đánh dấu hoàn thành thống nhất nước Đức?',opts:['Thành lập Liên bang Bắc Đức năm 1867','Chiến tranh Pháp – Phổ năm 1870','Tuyên bố thành lập Đế chế Đức tại Versailles năm 1871','Cách mạng tháng Ba năm 1848'],a:2,why:'Đế chế Đức được tuyên bố thành lập ngày 18/1/1871 tại Versailles.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Chính khách có vai trò nổi bật trong thống nhất nước Đức là ai?',opts:['Otto von Bismarck','Karl Marx','Napoleon III','Metternich'],a:0,why:'Bismarck là Thủ tướng Phổ và kiến trúc sư chủ yếu của tiến trình thống nhất Đức.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Cuộc Duy tân Minh Trị ở Nhật Bản bắt đầu vào năm nào?',opts:['1840','1853','1871','1868'],a:3,why:'Năm 1868 đánh dấu sự khởi đầu của công cuộc Duy tân Minh Trị.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Một nguyên nhân quan trọng khiến Nhật Bản tiến hành Duy tân Minh Trị là gì?',opts:['Mở rộng chế độ lãnh chúa','Nguy cơ bị phương Tây xâm lược và yêu cầu canh tân','Khôi phục Mạc phủ','Đóng cửa hoàn toàn đất nước'],a:1,why:'Sức ép phương Tây đặt Nhật Bản trước yêu cầu cải cách để giữ độc lập.'},
+{region:'world',period:'early-modern',level:'application',type:'single',q:'Nội dung nào thể hiện rõ tính chất tư sản của Duy tân Minh Trị?',opts:['Phát triển kinh tế hàng hóa và công nghiệp','Duy trì lãnh địa khép kín','Củng cố lãnh chúa địa phương','Khôi phục đặc quyền phong kiến'],a:0,why:'Phát triển công nghiệp và kinh tế tư bản chủ nghĩa là nội dung quan trọng của duy tân.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Hệ quả phổ biến của chính sách xâm lược thuộc địa thế kỉ XIX là gì?',opts:['Xóa bỏ bất bình đẳng','Thúc đẩy độc lập thuộc địa','Gia tăng lệ thuộc kinh tế và chính trị','Chấm dứt cạnh tranh đế quốc'],a:2,why:'Nhiều nước Á, Phi và Mỹ Latinh bị đặt dưới ách thống trị, lệ thuộc của chủ nghĩa thực dân.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Học thuyết nào gắn với Tổng thống James Monroe năm 1823?',opts:['Học thuyết Monroe','Học thuyết Truman','Học thuyết Brezhnev','Học thuyết domino'],a:0,why:'Học thuyết Monroe được công bố năm 1823, liên quan đến việc phản đối can thiệp châu Âu vào châu Mỹ.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Quốc tế thứ nhất được thành lập vào năm nào?',opts:['1848','1864','1871','1889'],a:1,why:'Hội Liên hiệp Lao động quốc tế, thường gọi Quốc tế thứ nhất, thành lập năm 1864.'},
+{region:'world',period:'early-modern',level:'recognition',type:'single',q:'Công xã Paris năm 1871 tồn tại trong khoảng thời gian nào?',opts:['Tháng 1 đến tháng 3','Tháng 4 đến tháng 6','Tháng 3 đến tháng 5','Tháng 7 đến tháng 9'],a:2,why:'Công xã tồn tại từ ngày 18/3 đến ngày 28/5/1871.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Điểm tiến bộ nổi bật của Công xã Paris năm 1871 là gì?',opts:['Bảo vệ quân chủ lập hiến','Trao quyền cho quý tộc','Khôi phục quyền lực tuyệt đối của Giáo hội','Xây dựng chính quyền của công nhân và nhân dân lao động'],a:3,why:'Công xã Paris được xem là nhà nước kiểu mới của giai cấp công nhân.'},
+{region:'world',period:'early-modern',level:'application',type:'single',q:'Nguyên nhân trực tiếp dẫn đến Chiến tranh Pháp – Phổ năm 1870 là gì?',opts:['Vấn đề ngai vàng Tây Ban Nha và điện tín Ems','Tranh chấp thuộc địa ở châu Phi','Tranh chấp kênh đào Suez','Tranh chấp Balkan'],a:0,why:'Khủng hoảng kế vị Tây Ban Nha và vụ điện tín Ems làm căng thẳng leo thang.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'single',q:'Dấu hiệu quan trọng của sự chuyển sang chủ nghĩa tư bản độc quyền là gì?',opts:['Công trường thủ công xuất hiện','Hình thành các tổ chức độc quyền và tập trung tư bản','Lãnh địa phong kiến tan rã','Thương mại đường biển trung đại phát triển'],a:1,why:'Cuối thế kỉ XIX – đầu thế kỉ XX, tập trung tư bản cao độ làm xuất hiện các tổ chức độc quyền.'},
+{region:'world',period:'early-modern',level:'application',type:'single',q:'Đánh giá nào phù hợp nhất về kết quả của Duy tân Minh Trị?',opts:['Nhật Bản trở thành thuộc địa phương Tây','Nhật Bản duy trì hoàn toàn kinh tế phong kiến','Nhật Bản trở thành nước tư bản công nghiệp và cường quốc châu Á','Nhật Bản trở thành nước cộng hòa'],a:2,why:'Cải cách giúp Nhật Bản hiện đại hóa nhanh chóng, trở thành cường quốc ở châu Á.'},
+{region:'world',period:'early-modern',level:'application',type:'single',q:'Ý nghĩa khái quát của nhiều cuộc cách mạng tư sản thời cận đại là gì?',opts:['Xóa bỏ mọi bất bình đẳng','Chấm dứt mọi cuộc chiến tranh','Thiết lập chủ nghĩa xã hội toàn cầu','Mở đường cho chủ nghĩa tư bản phát triển'],a:3,why:'Các cuộc cách mạng tư sản lật đổ hoặc làm suy yếu trở lực phong kiến, mở đường cho chủ nghĩa tư bản.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'tf',q:'Cách mạng tư sản Anh thế kỉ XVII góp phần xác lập chế độ quân chủ lập hiến ở Anh.',a:true,why:'Quyền lực nhà vua bị hạn chế, vai trò Quốc hội được củng cố.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'tf',q:'Tuyên ngôn Độc lập Hoa Kỳ năm 1776 tuyên bố 13 thuộc địa tiếp tục lệ thuộc chính trị vào Anh.',a:false,why:'Tuyên ngôn tuyên bố các thuộc địa là những quốc gia tự do và độc lập.'},
+{region:'world',period:'early-modern',level:'application',type:'tf',q:'Cách mạng công nghiệp lần thứ nhất thúc đẩy đô thị hóa và làm thay đổi cơ cấu lao động.',a:true,why:'Nhà máy thu hút lao động đến đô thị và làm tăng lao động công nghiệp.'},
+{region:'world',period:'early-modern',level:'comprehension',type:'tf',q:'Công xã Paris năm 1871 tồn tại lâu dài và không bị lực lượng đối lập đàn áp.',a:false,why:'Công xã chỉ tồn tại khoảng 72 ngày và bị quân đội Versailles đàn áp.'}
+];
+let state={items:[],answers:[],index:0,started:0,timer:null,seconds:0,mode:'practice'};
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));window.scrollTo(0,0)}
+$('startBtn').onclick=()=>show('setup');$('libraryBtn').onclick=()=>show('library');document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>show(b.dataset.go));
+document.querySelectorAll('[data-region]').forEach(b=>b.onclick=()=>{$('region').value=b.dataset.region;show('setup')});
+$('mode').onchange=()=>{const exam=$('mode').value==='exam';$('countWrap').hidden=exam;$('examNotice').hidden=!exam};
+const eras=[['Tiền sử – Cổ đại','Sự hình thành xã hội loài người, các nền văn minh sông lớn, Hy Lạp và La Mã cổ đại.'],['Trung đại','Các đế chế, tôn giáo, phong kiến, thương mại và những chuyển biến cuối thời trung đại.'],['Cận đại','Các cuộc cách mạng tư sản, cách mạng công nghiệp, chủ nghĩa thực dân và phong trào công nhân.'],['Hiện đại','Hai cuộc chiến tranh thế giới, cách mạng xã hội và trật tự thế giới sau năm 1945.'],['Đương đại','Toàn cầu hóa, trật tự đa cực, hợp tác quốc tế và những vấn đề của thế kỷ XXI.']];
+$('timeline').innerHTML=eras.map((e,i)=>`<article class="era"><h3>${e[0]}</h3><p>${e[1]}</p></article>`).join('');
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+$('beginQuiz').onclick=()=>{
+ const region=$('region').value,period=$('period').value,level=$('level').value,format=$('format').value,mode=$('mode').value;
+ let pool=questions.filter(q=>(region==='both'||q.region===region)&&(period==='all'||q.period===period)&&(level==='mixed'||q.level===level));
+ if(!pool.length)pool=questions.filter(q=>region==='both'||q.region===region);
+ let chosen;
+ if(mode==='exam'){chosen=shuffle(pool.filter(q=>q.type==='single')).slice(0,24);if(chosen.length<24)chosen=shuffle(questions.filter(q=>q.type==='single')).slice(0,24);chosen=chosen.concat(shuffle(pool.filter(q=>q.type==='tf')).slice(0,4));if(chosen.length<28)chosen=chosen.concat(shuffle(questions.filter(q=>q.type==='tf')).slice(0,4-chosen.length+24));}
+ else {let wanted=Number($('count').value);let p=pool.filter(q=>format==='mixed'||(format==='single'?q.type==='single':q.type==='tf'));chosen=shuffle(p).slice(0,wanted);if(chosen.length<wanted)chosen=shuffle(p).slice(0,wanted);}
+ state.items=chosen;state.answers=Array(chosen.length).fill(null);state.index=0;state.mode=mode;state.seconds=mode==='exam'?3000:0;renderQuestion();show('quiz');startTimer();
+};
+function startTimer(){clearInterval(state.timer);if(state.mode!=='exam'){$('timer').textContent='Luyện tập';return}tick();state.timer=setInterval(tick,1000)}
+function tick(){let m=Math.floor(state.seconds/60),s=state.seconds%60;$('timer').textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;if(state.seconds<=0){clearInterval(state.timer);finish()}else state.seconds--}
+function renderQuestion(){let q=state.items[state.index],n=state.index+1;$('questionNo').textContent=`${String(n).padStart(2,'0')} / ${state.items.length}`;$('quizSection').textContent=state.mode==='exam'?'CHRONICA / EXAMINATION':'CHRONICA / PRACTICE';$('progress').style.width=(n/state.items.length*100)+'%';
+ let opts=q.type==='single'?q.opts.map((o,i)=>`<label class="option"><input type="radio" name="answer" value="${i}" ${state.answers[state.index]===i?'checked':''}><span><b>${'ABCD'[i]}.</b> ${o}</span></label>`).join():['Đúng','Sai'].map((o,i)=>`<label class="option"><input type="radio" name="answer" value="${i===0?'true':'false'}" ${state.answers[state.index]===(i===0)?'checked':''}><span>${o}</span></label>`).join('');
+ $('questionArea').innerHTML=`<article class="question-card"><div class="qtype">${q.type==='single'?'TRẮC NGHIỆM NHIỀU LỰA CHỌN':'TRẮC NGHIỆM ĐÚNG – SAI'} · ${q.level==='recognition'?'NHẬN BIẾT':q.level==='comprehension'?'THÔNG HIỂU':'VẬN DỤNG'}</div><h2>${q.q}</h2>${opts}</article>`;
+ document.querySelectorAll('input[name=answer]').forEach(el=>el.onchange=()=>{state.answers[state.index]=q.type==='single'?Number(el.value):el.value==='true';});
+ $('prevQ').disabled=state.index===0;$('nextQ').textContent=state.index===state.items.length-1?'Câu cuối':'Tiếp theo →';
+}
+$('prevQ').onclick=()=>{if(state.index>0){state.index--;renderQuestion()}};$('nextQ').onclick=()=>{if(state.index<state.items.length-1){state.index++;renderQuestion()}};
+$('quitQuiz').onclick=()=>{if(confirm('Thoát bài làm? Tiến độ hiện tại sẽ không được lưu.')){clearInterval(state.timer);show('setup')}};
+$('submitQuiz').onclick=()=>{if(confirm('Cậu chắc chắn muốn nộp bài?'))finish()};
+function finish(){clearInterval(state.timer);let correct=0,blank=0,review='';
+ state.items.forEach((q,i)=>{let a=state.answers[i],ok=a===null?false:a===q.a; if(a===null)blank++;if(ok)correct++;
+ let chosen=q.type==='single'?(a===null?'Chưa trả lời':q.opts[a]):(a===null?'Chưa trả lời':a?'Đúng':'Sai');
+ let answer=q.type==='single'?q.opts[q.a]:(q.a?'Đúng':'Sai');
+ review+=`<div class="review-item"><strong>${i+1}. ${q.q}</strong><span class="${ok?'good':'bad'}">${ok?'✓ Chính xác':'✗ Chưa chính xác'} · Cậu chọn: ${chosen}</span><small>Đáp án: ${answer}. ${q.why}</small></div>`;
+ });
+ let score;
+ if(state.mode==='exam'){let mc=0,tfScore=0;state.items.forEach((q,i)=>{if(q.type==='single'&&state.answers[i]===q.a)mc+=.25});let tf=state.items.filter(q=>q.type==='tf');let tfCorrect=tf.reduce((sum,q)=>sum+(state.answers[state.items.indexOf(q)]===q.a?1:0),0);tfScore=tfCorrect/4;score=mc+tfScore;}
+ else score=correct/state.items.length*10;
+ $('score').textContent=score.toFixed(2);$('correctCount').textContent=correct;$('wrongCount').textContent=state.items.length-correct-blank;$('blankCount').textContent=blank;$('resultSub').textContent=state.mode==='exam'?'Kết quả mô phỏng theo thang điểm 10.':'Kết quả luyện tập của cậu.';$('scoreCaption').textContent=state.mode==='exam'?'THANG ĐIỂM 10 · MÔ PHỎNG':'QUY ĐỔI THAM KHẢO / 10';$('reviewList').innerHTML=review;show('result');
+}
+$('againBtn').onclick=()=>show('setup');
+let audioOn=false,ctx,osc,gain;
+$('musicToggle').onclick=()=>{audioOn=!audioOn;$('musicLabel').textContent=audioOn?'Nhạc: Bật':'Nhạc: Tắt';if(audioOn){try{ctx=ctx||new(window.AudioContext||window.webkitAudioContext)();if(ctx.state==='suspended')ctx.resume();if(!osc){osc=ctx.createOscillator();gain=ctx.createGain();osc.type='sine';osc.frequency.value=261.63;gain.gain.value=.012;osc.connect(gain);gain.connect(ctx.destination);osc.start()}}catch(e){$('musicLabel').textContent='Không hỗ trợ âm thanh'}}else if(gain)gain.gain.setTargetAtTime(0,ctx.currentTime,.1)};
+// Service worker requires HTTPS hosting; omitted in this local preview.
+
+</script>
+</body></html>
